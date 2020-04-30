@@ -2,29 +2,29 @@
     box-sizing: border-box;
     position: relative;
 }
-/*
 .grid_item{
-    opacity:.1;
+    color:white;
+    opacity:0;
     width:200px;
     height: 200px;
     font-weight: 800;
-    font-size: 100px;
+    font-size: 140px;
+    text-align: center;
     font-family: 'Krona One', sans-serif;
-    transition:all 1s ease-in-out 5s;
+    transition:all .25s linear;
 }
 .grid_item:hover{
     opacity:1;
+    color:bisque;
     
 }
 .grid{
-z-index: 100;
     position:absolute;
     width:100vw;
   display: flex;
   flex-wrap: wrap;
   
 }
-*/
 h1 {
     font-size: 120px;
     letter-spacing: 5px;
@@ -86,6 +86,7 @@ div.box {
     margin-bottom: 600px;
     flex-direction: row-reverse;
     display: flex;
+justify-content: space-around;
     overflow: hidden;
     height: 60vh;
     width: 80vw;
@@ -168,8 +169,6 @@ path#zoom-2,
 path#dolphins {
     opacity: 0;
     stroke-dasharray: 2000px;
-
-
     animation: dash 6s ease-out infinite;
 }
 

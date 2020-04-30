@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+.grid_item{
+    opacity:.1;
+    width:200px;
+    height: 200px;
+    font-weight: 800;
+    font-size: 100px;
+    font-family: 'Krona One', sans-serif;
+    transition:all 1s ease-in-out 5s;
+}
+.grid_item:hover{
+    opacity:1;
+    
+}
+.grid{
+z-index: 100;
+    position:absolute;
+    width:100vw;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+h1 {
+    font-size: 120px;
+    letter-spacing: 5ps;
+    text-align: center;
+    font-family: 'Six Caps', sans-serif;
+}
+
+div.welcome {
+    margin-top: 40px;
+    height: 100vh;
+}
+
+div.arrows {
+    padding-top: 40px;
+    bottom:0px;
+    margin: auto;
+    width: 170px;
+    animation: downArrow 5s ease-in-out infinite;
+}
+
+@keyframes downArrow {
+    to{
+        bottom:-20%;
+    }
+}
+
+button {
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 10px;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 30px;
+    background-color: orangered;
+    border-radius: 40% 0 40% 0;
+    transition: .25s ease-out;
+}
+
+
+button:hover {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 0 40% 0 40%;
+
+}
+
+button:active {
+    transform: scale(2);
+    box-shadow: 1px 3px 1px orange;
+}
+
+
+/*THIS IS BEGININGGIN THE NARRATIVE*/
+
+div.box {
+z-index: -100;
+    border: 20px solid black;
+    margin: auto;
+    margin-bottom: 600px;
+    flex-direction: row-reverse;
+    display: flex;
+    overflow: hidden;
+    height: 60vh;
+    width: 80vw;
+    background-color: white;
+}
+
+div.box.up {
+    background-color: white;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+    div.box {
+        flex-direction: column;
+        width: auto;
+        height:auto;
+    }
+    h2{
+            writing-mode: horizontal-tb;
+    }
+}
+div.box:hover{
+        box-shadow: 5px 50px 40px black;
+    transform:scale(2);
+}
+
+.box.down div.title-bar {
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    padding: 10px;
+    font-family: 'Six Caps', sans-serif;
+    letter-spacing: 20px;
+    writing-mode: vertical-rl;
+/*    text-orientation: upright;*/
+    font-size: 50px;
+
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 18px;
+
+}
+
+div.caption {
+    font-family: 'Krona One', sans-serif;
+    flex-basis: 40%;
+    align-self: center;
+}
+
+button#postcovid {
+    opacity: 0;
+
+}
+
+div.graphic {
+    overflow: hidden;
+    align-self: center;
+    opacity: 0;
+    flex-basis: 40%;
+}
+
+#death-toll-svg {
+    opacity: 1;
+}
+
+#vietnam {
+    opacity: 0;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: 'Six Caps', sans-serif;
+}
+
+path#sp-2,
+path#zoom-2,
+path#dolphins {
+    opacity: 0;
+    stroke-dasharray: 2000px;
+
+
+    animation: dash 6s ease-out infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 2000px;
+        stroke-dasharray: 1000px;
+    }
+}
+
+
+div#deathtoll-svg {
+    padding: 5px;
+    right: -100%;
+
+    position: relative;
+}
+
+div#venice {
+    overflow: hidden;
+    position: relative;
+    left: 0px;
+    top: 0px;
+
+}
+
+/*JQUERY assigned classes*/

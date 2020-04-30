@@ -2,6 +2,7 @@
     box-sizing: border-box;
     position: relative;
 }
+/*
 .grid_item{
     opacity:.1;
     width:200px;
@@ -16,16 +17,17 @@
     
 }
 .grid{
-z-index: -100;
+z-index: 100;
     position:absolute;
     width:100vw;
   display: flex;
   flex-wrap: wrap;
   
 }
+*/
 h1 {
     font-size: 120px;
-    letter-spacing: 5ps;
+    letter-spacing: 5px;
     text-align: center;
     font-family: 'Six Caps', sans-serif;
 }
@@ -50,6 +52,7 @@ div.arrows {
 }
 
 button {
+    
     letter-spacing: 2px;
     font-weight: 400;
     padding: 10px;
@@ -62,7 +65,7 @@ button {
 
 
 button:hover {
-    color: white;
+    color: black;
     font-weight: 700;
     letter-spacing: 2px;
     border-radius: 0 40% 0 40%;
@@ -78,7 +81,6 @@ button:active {
 /*THIS IS BEGININGGIN THE NARRATIVE*/
 
 div.box {
-z-index: -100;
     border: 20px solid black;
     margin: auto;
     margin-bottom: 600px;
